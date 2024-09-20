@@ -1,6 +1,14 @@
 import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function App() {
+  const navigate = useNavigate()
+  const [search,setSearch] = useState("");
+  const handleSearch = (e) => {
+    e.preventDefault();
+    navigate(`/search?query=${search}`);
+  };
+  
   const [count, setCount] = useState(0);
 
   const parameters = [
@@ -27,13 +35,13 @@ function App() {
               <div className="box1 flex space-x-5 items-center">
                 <div className="logo">Logo</div>
                 <div className="sbar">
-                  <input type="text" placeholder="Search..." className="w-80 p-2 border-2 border-gray-300 focus:bg-gray-100 outline-none" />
+                  <input type="text" placeholder="Search..." className="w-80 p-2 border-2 border-gray-300 focus:bg-gray-100 outline-none" onChange={(e)=>setSearch(e.target.value)}/>
                 </div>
               </div>
               <div className="box2 flex space-x-8 items-center">
-                <a href="https://example.com" className="e1 hover:underline">Wishlist</a>
-                <a href="https://example.com" className="e1 hover:underline">Location</a>
-                <button className="button border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors">Sign In</button>
+                <a href="/wishlist" className="e1 hover:underline" onClick={()=> navigate("/wishlist")}>Wishlist</a>
+                <a href="/" className="e1 hover:underline">Location</a>
+                <button className="button border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors" onClick={() => navigate("/signIn")} target="_blank">Sign In</button>
               </div>
             </div>
           </div>
