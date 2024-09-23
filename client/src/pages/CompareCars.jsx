@@ -47,7 +47,7 @@ function App() {
       seller: 'Toyota dealer',
       model: 'Sedan',
       year: '2020',
-      color: 'Silver',
+      color: 'white',
       fuel: 'Hybrid',
       gear: 'Automatic',
       mileage: '20km/L',
