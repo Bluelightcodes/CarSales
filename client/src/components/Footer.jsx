@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white p-6 mt-10">
       <div className="container mx-auto flex justify-between items-center">
         <p className="text-sm">© 2024 Car Dealership. All rights reserved.</p>
-        <Link to="/feedback" className="text-sm hover:underline">
+        <Link to="/Feedback" className="text-sm hover:underline">
           Give Feedback
         </Link>
       </div>

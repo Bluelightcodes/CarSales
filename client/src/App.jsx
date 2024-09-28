@@ -11,6 +11,7 @@ import GarageManagement from './dealership/GarageManagement';
 import AddNewVehicle from './dealership/AddNewVehicle';
 import Profile from "./user/userProfile";
 import DealershipSignIn from "./dealership/dealerLogin";
+import Feedback from "./user/Feedback";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/compare-cars" element={<CompareCars />} />
         <Route path="/makeAnOffer" element={<MakeAnOffer />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/Feedback" element={<Feedback />} />
 
         {/* For dealership */}
         <Route path="/dealershipLogin" element={<DealershipSignIn /> } />
