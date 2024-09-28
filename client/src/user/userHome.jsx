@@ -7,6 +7,7 @@ import pic1 from '../assets/carInterior.jpg';
 import plchldr from "../assets/CarPlaceholdr.jpg";
 import pic2 from "../assets/carSMbg.jpeg";
 import Card1 from "../components/Card1";
+import Footer from '../components/Footer';  
 
 const data = [
   {
@@ -120,6 +121,7 @@ const UserHome = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </>
   );
 };
