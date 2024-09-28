@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { getAuth, onAuthStateChanged, signOut } from 'firebase/auth';
+import LocationMenu from './Location';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -50,8 +51,8 @@ const Navbar = () => {
         <a className='e1 hover:underline hover:cursor-pointer' onClick={()=> navigate("/wishlist")}>
           Wishlist
         </a>
-        <p className='e1 hover:underline hover:cursor-pointer'onClick={()=> navigate("/")}>
-          Location
+        <p className='e1 hover:underline hover:cursor-pointer z-20'onClick={()=> navigate("/")}>
+        <LocationMenu />
         </p>
         <button className='button border border-black px-4 py-2 hover:bg-black hover:text-white transition-colors' onClick={() => navigate("/signIn")} target="_blank">
           Sign In
