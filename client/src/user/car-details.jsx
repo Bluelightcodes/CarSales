@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import React, { useState, useRef, useEffect } from "react";
+import Footer from "../components/Footer";
 
 const CarDetails = () => {
   const location = useLocation();
@@ -53,7 +54,7 @@ const CarDetails = () => {
   };
 
   const handleCompareClick = () => {
-    navigate("/compare-cars", { state: { img, title, text } });
+    navigate("/CompareCars", { state: { img, title, text } });
   };
 
   const renderTabContent = () => {
@@ -232,6 +233,7 @@ const CarDetails = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

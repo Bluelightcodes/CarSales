@@ -5,6 +5,7 @@ import 'rc-slider/assets/index.css';
 import Navbar from '../components/Navbar';
 import sampleImage from '../assets/CarPlaceholdr.jpg';
 import Card1 from '../components/Card1';
+import Footer from '../components/Footer';
 
 const carData = [
   { id: 1, image: sampleImage, name: 'CAR1', price: 2000 },
@@ -91,6 +92,7 @@ const CarSales = () => {
   };
 
   return (
+    <div>
     <div>
       <Navbar />
       <div className="flex p-5">
@@ -212,6 +214,8 @@ const CarSales = () => {
           </div>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const Locmenu = ({ onLocationSelect, locations }) => {
   };
 
   return (
-    <div className='relative'>
+    <div className='relative shadow-lg'>
       <button
         onClick={toggleDropdown}
         className='mt-2 px-4 py-2 border border-black rounded focus:outline-none focus:ring-2 focus:ring-blue-600'

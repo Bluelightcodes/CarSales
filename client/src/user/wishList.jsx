@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 const Wishlist = () => {
   const [wishlistItems, setWishlistItems] = useState([
     {
@@ -69,6 +71,8 @@ const Wishlist = () => {
   };
 
   return (
+    <div>
+      <Navbar/>
     <div className="p-6">
       <h1 className="text-2xl font-bold">Wishlist</h1>
       <p className="mb-4">You have {wishlistItems.length} saved items</p>
@@ -101,6 +105,8 @@ const Wishlist = () => {
           </div>
         ))}
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

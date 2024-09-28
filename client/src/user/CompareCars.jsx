@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import Dpmenu from '../components/dropdown';
+import Dpmenu from '../components/dropcars';
+import Footer from '../components/Footer';
 
 function App() {
   const navigate = useNavigate();
@@ -118,6 +119,7 @@ function App() {
           </tbody>
         </table>
       </div>
+      <Footer/>
     </>
   );
 }
