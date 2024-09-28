@@ -20,9 +20,9 @@ function App() {
         <Route path="/" element={<UserHome />} />
         <Route path="/signIn" element={<SignIn />} />
         <Route path="/search" element={<SearchResults />} />
-        <Route path="/carDetails/" element={<CarDetails />} /> 
+        <Route path="/car-details/" element={<CarDetails />} /> 
         <Route path="/wishlist" element={<WishList />} />
-        <Route path="/compareCars" element={<CompareCars />} />
+        <Route path="/compare-cars" element={<CompareCars />} />
         <Route path="/makeAnOffer" element={<MakeAnOffer />} />
         <Route path="/profile" element={<Profile />} />
 
